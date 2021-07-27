@@ -1,4 +1,4 @@
-package app.test;
+package test;
 
 import org.junit.jupiter.api.Test;
 import app.MyHash;
