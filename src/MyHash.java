@@ -16,7 +16,7 @@ public class MyHash {
     }
 
     private int hash(Integer value) {
-        return value % buckets.length;
+        return Math.abs(value) % buckets.length;
     }
 
     public void add(Integer value) {

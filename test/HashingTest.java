@@ -1,7 +1,4 @@
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import java.util.Objects;
 
 class HashingTest {
     final int elementsCount = 100;
@@ -9,7 +6,7 @@ class HashingTest {
     public MyHash h1 = new MyHash(bucketsCount);
 
     public HashingTest() {
-        for(int i = 0; i < elemensCount; ++i) {
+        for(int i = 0; i < elementsCount; ++i) {
             h1.add(i);
         }
     }
@@ -46,7 +43,7 @@ class HashingTest {
     }
 
     @Test
-    public loadFactor_returnsCorrectValue() {
+    public void loadFactor_returnsCorrectValue() {
         assert h1.loadFactor() == bucketsCount;
     }
 }
