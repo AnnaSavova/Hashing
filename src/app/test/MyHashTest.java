@@ -1,8 +1,6 @@
-package test;
+package app.test;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import java.util.Objects;
 import app.MyHash;
 
 class MyHashTest {
