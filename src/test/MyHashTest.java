@@ -1,11 +1,16 @@
-import org.junit.jupiter.api.Test;
+package test;
 
-class HashingTest {
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+import java.util.Objects;
+import app.MyHash;
+
+class MyHashTest {
     final int elementsCount = 100;
     final int bucketsCount = elementsCount / 10;
     public MyHash h1 = new MyHash(bucketsCount);
 
-    public HashingTest() {
+    public MyHashTest() {
         for(int i = 0; i < elementsCount; ++i) {
             h1.add(i);
         }
